@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write a function to check if a input number is even or odd
+function evenodd(z){
+    let input = prompt("Enter a number to check if it's even or odd:");
+    if(z%2==0){
+       alert("even number")
+    }
+    else{
+        alert("odd number")
+    }
+}
+evenodd();
+
+
+
+
+
+
+// Function to check the largest number among three numbers
+function LargestNumber(num1, num2, num3) {
+   
+ 
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    } 
+  
+    else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+    } 
+  
+    else {
+        return num3;
+    }
+  }
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+let num3 = parseFloat(prompt("Enter the third number:"));
+  
+  alert("The largest number is: " + LargestNumber(num1,num2, num3)); 
+
+//input string is palindrome or not
+function isPalindrome(str) {
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+let input = prompt("Enter a string to check if it's a palindrome:");
+if (isPalindrome(input)) {
+    alert("The string is a palindrome.");
+} else {
+    alert("The string is not a palindrome.");
+}
+  
+    </script>
+</body>
+</html>
+
+
+  
